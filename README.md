@@ -5,7 +5,7 @@ Exercice de NodeJS
 ### Details de l'exercice
 
 - Creer un template permettant d'inscrire des abonnes a un evenement
-  - Le formulaire doit contenir les champs suivants **_nom_**,**_prenom_**,**_adresse_**,**_pseudo_**,**_em$
+  - Le formulaire doit contenir les champs suivants **_nom_**,**_prenom_**,**_adresse_**,**_pseudo_**,**_email_**$
 - A la creation d'un utilisateur:
   - Inserer la liste des participants dans un fichier **.csv** ou **.txt**
   - Afficher un message de succes ou d'erreur.
