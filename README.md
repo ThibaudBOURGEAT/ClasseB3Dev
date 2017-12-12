@@ -12,7 +12,7 @@ Exercice de NodeJS
 - Mettre en forme l'interface de creation en ajoutant du **CSS**
 - Ajouter un menu avec un bouton permettant de lister l'ensemble des participants
 - Optimiser son css en minifiant
-- Mettre en pace un systeme permettant de supprimer tout ou une partie des participant avec un message de c$
+- Mettre en pace un systeme permettant de supprimer tout ou une partie des participant avec un message de confirmation
 
 
 Made by @github/maranathapp
