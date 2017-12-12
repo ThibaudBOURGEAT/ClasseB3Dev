@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Hello World</title>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+  <p id='response'></p>
+  <form id='form_login'>
+    Prénom :<br>
+    <input type="text" name="firstname"><br>
+    Nom :<br>
+    <input type="text" name="lastname">
+    <input type="submit" value="Submit">
+  </form>
+  <script>
+    $("#form_login").submit(function(e) {
+        var url = "/login"; // the s            cript where you handle the form input.
+
+        $.ajax({
+               type: "POST",
+               url: url,
+               data: $("#form_login").serialize(), // serializes the form's elements.
+               success: function(data)
+               {
+                   $('#response').text(`Bonjour ${data.firstname} ${data.lastname}`); // show response from the php script.
+               }
+             });
+
+        e.preventDefault(); // avoid to execute the actual submit of the form.
+    });
+  </script>
+</body>
+</html>
