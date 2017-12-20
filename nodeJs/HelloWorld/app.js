@@ -31,7 +31,7 @@ const router = (req, res) => {
   }
 }
 
-const requestHandler = (req, res) => {7
+const requestHandler = (req, res) => {
   let body = '';
   req.on('data', function (data) {
       body += data;
